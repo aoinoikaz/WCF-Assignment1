@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF-Assignment1-Service", "wcf-assignment1\WCF-Assignment1-Service.csproj", "{42D3BF5F-800B-4E9C-B715-4C3E9A5FD526}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{F9E8A99E-CDFA-480C-A38C-1104071F1151}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainClient", "Client\MainClient.csproj", "{F9E8A99E-CDFA-480C-A38C-1104071F1151}"
 	ProjectSection(ProjectDependencies) = postProject
 		{42D3BF5F-800B-4E9C-B715-4C3E9A5FD526} = {42D3BF5F-800B-4E9C-B715-4C3E9A5FD526}
 	EndProjectSection

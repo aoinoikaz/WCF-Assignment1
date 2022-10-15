@@ -1,6 +1,6 @@
+D:\Documents\School\Semester5\Distributed Applications\Assignment 1\WCF-Assignment1\Client\obj\Debug\MainClient.csproj.CoreCompileInputs.cache
 D:\Documents\School\Semester5\Distributed Applications\Assignment 1\WCF-Assignment1\Client\bin\Debug\Client.exe.config
 D:\Documents\School\Semester5\Distributed Applications\Assignment 1\WCF-Assignment1\Client\bin\Debug\Client.exe
 D:\Documents\School\Semester5\Distributed Applications\Assignment 1\WCF-Assignment1\Client\bin\Debug\Client.pdb
-D:\Documents\School\Semester5\Distributed Applications\Assignment 1\WCF-Assignment1\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
 D:\Documents\School\Semester5\Distributed Applications\Assignment 1\WCF-Assignment1\Client\obj\Debug\Client.exe
 D:\Documents\School\Semester5\Distributed Applications\Assignment 1\WCF-Assignment1\Client\obj\Debug\Client.pdb

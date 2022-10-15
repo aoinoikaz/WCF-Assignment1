@@ -14,27 +14,27 @@ namespace wcf_assignment1
     {
         public int CalculateSumOfDigits(int number)
         {
-            throw new NotImplementedException();
+            return 3;
         }
 
         public string ConvertToHTMLTag(string tag, string data)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         public bool IsPrimeNumber(int number)
         {
-            throw new NotImplementedException();
+            return true;
         }
 
         public string ReverseString(string data)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         public List<int> SortNumbers(SortType type, List<int> numbers)
         {
-            throw new NotImplementedException();
+            return null;
         }
     }
 }

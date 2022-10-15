@@ -12,26 +12,46 @@ namespace Client
         // 
         static void Main(string[] args)
         {
-            ServiceReference1.ServiceClient client = new ServiceReference1.ServiceClient();
-            //var response = client.GetData(100);
-            //Console.WriteLine(response);
-            //Console.ReadLine();
+            WcfAssignmentService.ServiceClient client = new WcfAssignmentService.ServiceClient();
 
-            
 
-            // prime number
+            bool exit = false;
 
-            // sum of digits
+            do
+            {
+                Console.WriteLine("---------- WCF Assignment 1 ---------- \n");
 
-            // reverse a string
+                Console.WriteLine("1. Prime number");
+                Console.WriteLine("2. Sum of digits");
+                Console.WriteLine("3. Reverse a string");
+                Console.WriteLine("4. Print HTML tags");
+                Console.WriteLine("5. Sort 5 numbers");
+                Console.WriteLine("6. Exit \n");
 
-            // print html tags
+                string input = Console.ReadLine();
 
-            // sort 5 numbers in ascending or descending order
-
-            // write the implementation inside our service and call client
-
-            // client.isPrimeNumber(input)
+                if (!string.IsNullOrEmpty(input) && int.TryParse(input, out int result))
+                {
+                    switch (result)
+                    {
+                        case 1:
+                            break;
+                        case 2:
+                            break;
+                        case 3:
+                            break;
+                        case 4:
+                            break;
+                        case 5:
+                            break;
+                        case 6:
+                            exit = true;
+                            break;
+                    }
+                }
+                Console.Clear();
+            }
+            while (!exit);
         }
     }
 }
