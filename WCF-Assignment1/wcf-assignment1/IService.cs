@@ -12,7 +12,20 @@ namespace wcf_assignment1
     [ServiceContract]
     public interface IService
     {
+
         [OperationContract]
-        string GetData(int value);
+        bool IsPrimeNumber(int number);
+
+        [OperationContract]
+        int CalculateSumOfDigits(int number);
+
+        [OperationContract]
+        string ReverseString(string data);
+
+        [OperationContract]
+        string ConvertToHTMLTag(string tag, string data);
+
+        [OperationContract]
+        List<int> SortNumbers(SortType type, List<int> numbers);
     }
 }
