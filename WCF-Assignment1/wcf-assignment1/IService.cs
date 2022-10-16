@@ -25,7 +25,8 @@ namespace wcf_assignment1
         [OperationContract]
         string ConvertToHTMLTag(string tag, string data);
 
+        
         [OperationContract]
-        List<int> SortNumbers(SortType type, List<int> numbers);
+        int[] Sort(SortType type, string[] numbers);
     }
 }

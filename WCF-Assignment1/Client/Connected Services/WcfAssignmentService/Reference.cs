@@ -51,11 +51,11 @@ namespace Client.WcfAssignmentService {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/ConvertToHTMLTag", ReplyAction="http://tempuri.org/IService/ConvertToHTMLTagResponse")]
         System.Threading.Tasks.Task<string> ConvertToHTMLTagAsync(string tag, string data);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SortNumbers", ReplyAction="http://tempuri.org/IService/SortNumbersResponse")]
-        int[] SortNumbers(Client.WcfAssignmentService.SortType type, int[] numbers);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/Sort", ReplyAction="http://tempuri.org/IService/SortResponse")]
+        int[] Sort(Client.WcfAssignmentService.SortType type, string[] numbers);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/SortNumbers", ReplyAction="http://tempuri.org/IService/SortNumbersResponse")]
-        System.Threading.Tasks.Task<int[]> SortNumbersAsync(Client.WcfAssignmentService.SortType type, int[] numbers);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService/Sort", ReplyAction="http://tempuri.org/IService/SortResponse")]
+        System.Threading.Tasks.Task<int[]> SortAsync(Client.WcfAssignmentService.SortType type, string[] numbers);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -117,12 +117,12 @@ namespace Client.WcfAssignmentService {
             return base.Channel.ConvertToHTMLTagAsync(tag, data);
         }
         
-        public int[] SortNumbers(Client.WcfAssignmentService.SortType type, int[] numbers) {
-            return base.Channel.SortNumbers(type, numbers);
+        public int[] Sort(Client.WcfAssignmentService.SortType type, string[] numbers) {
+            return base.Channel.Sort(type, numbers);
         }
         
-        public System.Threading.Tasks.Task<int[]> SortNumbersAsync(Client.WcfAssignmentService.SortType type, int[] numbers) {
-            return base.Channel.SortNumbersAsync(type, numbers);
+        public System.Threading.Tasks.Task<int[]> SortAsync(Client.WcfAssignmentService.SortType type, string[] numbers) {
+            return base.Channel.SortAsync(type, numbers);
         }
     }
 }

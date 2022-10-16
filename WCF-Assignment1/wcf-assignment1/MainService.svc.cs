@@ -8,33 +8,97 @@ using System.Text;
 
 namespace wcf_assignment1
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class MainService : IService
     {
-        public int CalculateSumOfDigits(int number)
-        {
-            return 3;
-        }
-
-        public string ConvertToHTMLTag(string tag, string data)
-        {
-            return null;
-        }
-
         public bool IsPrimeNumber(int number)
         {
+            if (number <= 1)
+                return false;
+
+            if (number == 2)
+                return true;
+
+            if (number % 2 == 0) 
+                return false;
+
+            var step = (int)Math.Floor(Math.Sqrt(number));
+
+            for (int i = 3; i <= step; i += 2)
+            {
+                if (number % i == 0)
+                { 
+                    return false;
+                }
+            }
+
             return true;
+        }
+
+        public int CalculateSumOfDigits(int number)
+        {
+            int sum = 0;
+
+            while (number != 0)
+            {
+                sum += number % 10;
+                number /= 10;
+            }
+
+            return sum;
         }
 
         public string ReverseString(string data)
         {
-            return null;
+            string reverse = null;
+
+            for (int i = data.Length - 1; i >= 0; i--)
+            {
+                reverse += data[i];
+            }
+
+            return reverse;
         }
 
-        public List<int> SortNumbers(SortType type, List<int> numbers)
+        public string ConvertToHTMLTag(string tag, string data)
         {
-            return null;
+            string openingTag = "<" + tag + ">";
+            string closingTag = "</" + tag + ">";
+            string converted = openingTag + data + closingTag;
+
+            return converted;
+        }
+        
+
+        public int[] Sort(SortType type, string[] numbers)
+        {
+            int[] sorted = null;
+
+            if (numbers.Length == 5)
+            {
+                sorted = new int[5];
+
+                for (int i = 0; i < numbers.Length; i++)
+                {
+                    if (int.TryParse(numbers[i], out int num))
+                    {
+                        sorted[i] = num;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+            }
+
+            Array.Sort(sorted);
+
+            if (type == SortType.Descending)
+            {
+                Array.Reverse(sorted);
+            }
+         
+            return sorted;
+
         }
     }
 }

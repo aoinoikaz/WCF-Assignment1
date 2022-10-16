@@ -32,11 +32,11 @@
   <wsdl:message name="IService_ConvertToHTMLTag_OutputMessage">
     <wsdl:part name="parameters" element="tns:ConvertToHTMLTagResponse" />
   </wsdl:message>
-  <wsdl:message name="IService_SortNumbers_InputMessage">
-    <wsdl:part name="parameters" element="tns:SortNumbers" />
+  <wsdl:message name="IService_Sort_InputMessage">
+    <wsdl:part name="parameters" element="tns:Sort" />
   </wsdl:message>
-  <wsdl:message name="IService_SortNumbers_OutputMessage">
-    <wsdl:part name="parameters" element="tns:SortNumbersResponse" />
+  <wsdl:message name="IService_Sort_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SortResponse" />
   </wsdl:message>
   <wsdl:portType name="IService">
     <wsdl:operation name="IsPrimeNumber">
@@ -55,9 +55,9 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IService/ConvertToHTMLTag" message="tns:IService_ConvertToHTMLTag_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService/ConvertToHTMLTagResponse" message="tns:IService_ConvertToHTMLTag_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="SortNumbers">
-      <wsdl:input wsaw:Action="http://tempuri.org/IService/SortNumbers" message="tns:IService_SortNumbers_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IService/SortNumbersResponse" message="tns:IService_SortNumbers_OutputMessage" />
+    <wsdl:operation name="Sort">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Sort" message="tns:IService_Sort_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/SortResponse" message="tns:IService_Sort_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
@@ -98,8 +98,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SortNumbers">
-      <soap:operation soapAction="http://tempuri.org/IService/SortNumbers" style="document" />
+    <wsdl:operation name="Sort">
+      <soap:operation soapAction="http://tempuri.org/IService/Sort" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

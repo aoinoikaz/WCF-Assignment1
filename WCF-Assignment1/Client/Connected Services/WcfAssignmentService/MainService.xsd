@@ -59,18 +59,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="SortNumbers">
+  <xs:element name="Sort">
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/wcf_assignment1" minOccurs="0" name="type" type="q1:SortType" />
-        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="numbers" nillable="true" type="q2:ArrayOfint" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="numbers" nillable="true" type="q2:ArrayOfstring" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="SortNumbersResponse">
+  <xs:element name="SortResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SortNumbersResult" nillable="true" type="q3:ArrayOfint" />
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SortResult" nillable="true" type="q3:ArrayOfint" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

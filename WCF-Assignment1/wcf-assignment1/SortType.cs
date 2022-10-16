@@ -5,7 +5,7 @@ using System.Web;
 
 namespace wcf_assignment1
 {
-    public enum SortType
+    public enum SortType : int
     {
         Ascending,
         Descending
